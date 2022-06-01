@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+  <script src="https://kit.fontawesome.com/9361569a0e.js" crossorigin="anonymous"></script>
+ <link
+    rel="icon"
+    href="earth.png"
+    type="image/x-icon"
+  />
+ 
+  <link rel="stylesheet" href="sign-up.css">
+ 
+  <title>&#129296;NEA Main System&#128526;</title>
+
+</head>
+<body>
+
+<div class="tab">
+  <button class="tablinks" id="HOMEBtn"  onclick="openTab(event, 'HOME')">HOME</button>
+  <button class="tablinks" id="signUpBtn" onclick="openTab(event, 'Sign-UpTab')">Sign Up</button>
+  <button class="tablinks" id="assignmentsBtn" onclick="openTab(event, 'assignments')">assignments</button>
+</div>
+<div id="verify"hidden>
+    <h2 class="text">Verify your an agent of the NEA</h2>
+    <br>
+    <br>
+    <input id="vInput" type="text" class="text" placeholder="Enter NEA password">
+    <br>
+    <br>
+    <button class="text" style="cursor: pointer;" onclick="verify()">Enter <i class="fa-solid fa-angles-right"></i></button>
+  </div>
+
+<div id="HOME" class="tabcontent">
+
+</div>
+
+<div class="loader" style="cursor: wait;"></div>
+
+<div id="Sign-UpTab" class="tabcontent">
+  <br>
+  <div id="agreementDiv" hidden>
+    <h2 class="text" style="text-align: center;">Your almost there!</h2>
+    <input class="text" type="checkbox" id="agree" name="agree" value="true">
+    <br>
+    <label class="text" for="agree">I agree and consent to the <a target="_blank" href="https://docs.google.com/document/d/1ZY2iLhxXzD2wQp0UXqLycoK1br2PjgUrn8xrPpU9LzM/edit?usp=sharing">terms and conditions</a></label><br> 
+    <button class="text" style="cursor: pointer;" onclick="finish()">Done!</button>
+  </div>
+  <br>
+
+<br>
+<div id="signUp" class="form">
+<label class="text">JOIN THE NEA!</label>
+<br>
+<label class="text" for="firstName">Name <i class="fa-solid fa-signature"></i></label>
+<br>
+<input id='firstName' name="message" type="text" class='text hoverEffect' placeholder="Enter First Name">
+<br>
+<br>
+<label class="text" for="middleName">Middle Name <i class="fa-solid fa-signature"></i></label>
+<br>
+<input id='middleName'type="text" class='text hoverEffect' placeholder="Enter Middle Name">
+<br>
+<br>
+<label class="text" for="lastName">Last Name <i class="fa-solid fa-signature"></i></label>
+<br>
+<input id='lastName' type="text" class='text hoverEffect' placeholder="Enter Last Name">
+<br>
+<br>
+<label class="text" for="email">Email <i class="fa-solid fa-envelope"></i></label>
+<br>
+<input id='email' type="email" class='text hoverEffect' placeholder="Enter email">
+<br>
+<br>
+<label class="text" for="middleName">Agency <i class="fa-solid fa-sitemap"></i></label>
+<br>
+<input id="v" type="text" class="text" placeholder="Enter NEA password" hidden>
+<select id="agency" class="text">
+    <option>NEA</option>
+    <option>Ninja</option>
+    <option>Project Confidential</option>
+</select>
+<br>
+<br>
+<label class="text" for="code-Name">Code name <i class="fa-solid fa-user-secret"></i></label>
+<br>
+<input id='codeName' minlength="3" type="text" class='text hoverEffect' placeholder="Create code name">
+<br>
+<br>
+<br>
+<label class="text" for="country">Country <i class="fa-solid fa-globe"></i></label>
+<br>
+  <input placeholder="Enter country" type="text" class="text hoverEffect" id="country">
+<br>
+<br>
+<label class="text" for="birthDate">Birth Date <i class="fa-solid fa-cake-candles"></i></label>
+<br>
+<input id='birthDate' type="date" class='text hoverEffect' placeholder="Enter Birth Date">
+<br>
+<br>
+<label class="text" for="gender">Gender <i class="fa-solid fa-user"></i></label>
+<br>
+<input placeholder="Enter your gender" type="text" class="text hoverEffect" id="gender">
+<br>
+<br>
+<button style="cursor: pointer;" onclick="validateForm()" class="text">Submit <i class="fa-solid fa-angles-right"></i></button>
+</form>
+</div>
+</div>
+
+<div id="assignments" class="tabcontent">
+  
+</div>
+
+ 
+<script src="sign-up.js"></script>
+ 
+</body>
