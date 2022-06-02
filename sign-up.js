@@ -11,19 +11,6 @@ const scrambler = ['!', ',', '.', ';', ':', '@', '#', '$', '%', '^', '&', '*', '
     elem.style.display="none";
  }
 
- function checkIfFilledOut(form){
-    // get all the inputs within the submitted form
-    var inputs = form.getElementsByTagName('input');
-     for (var i = 0; i < inputs.length; i++) {
-             if(inputs[i].value == ""){
-                 // found an empty field
-                 alert("Please fill out all fields!");
-                 return false;
-             }
-     }
-     return true;
- }
-
 function show(elem) {
     elem.style.display = 'block'
 }
@@ -110,11 +97,3 @@ function openTab(evt, tabName) {
     load();
     }
   }
-
- function validateForm() {
-    //if (checkIfFilledOut(signUp)) {
-    createAgentId();
-    hide(signUp);
-    show(agreementDiv);
-    //}
-}

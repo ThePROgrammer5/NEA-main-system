@@ -14,6 +14,8 @@ file_put_contents('lName.php', $lName, FILE_APPEND);*/
 ?>
 
 <script>
-    alert('hi');
+    createAgentId();
+    hide(signUp);
+    show(agreementDiv);
 </script>
 
