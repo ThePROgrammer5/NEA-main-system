@@ -15,10 +15,6 @@ $lName = $_POST['lastName'];
 file_put_contents('lName.php', $lName, FILE_APPEND);
 }
 
-// Enable FULL Error Reporting on the screen
-// ONLY USE IN DEVELOPMENT
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 ?>
 
 <script>
