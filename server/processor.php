@@ -1,3 +1,5 @@
+<html>
+<body>
 <?php
 
 /*$name = $_POST['firstName'];
@@ -18,4 +20,6 @@ file_put_contents('lName.php', $lName, FILE_APPEND);*/
     hide(signUp);
     show(agreementDiv);
 </script>
+</body>
+</html>
 
